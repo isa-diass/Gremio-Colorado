@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Institucional</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src='cadastro.js'></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">  <!-- Contêiner para o logo -->
+            <img class="logo1" src="gremio_colorado (1).jpg" alt="Logo do site"> <!-- Imagem do logo -->
+        </div>
+
+        <!-- Links de navegação com botões -->
+        <a href="paginaInicial.html" target="_self">
+            <button class="styled-button">Inicio</button> <!-- Botão de início -->
+        </a>
+        <a href="cadastro.html" target="_self">
+            <button class="styled-button">Cadastro</button> <!-- Botão de cadastro -->
+        </a>
+        <a href="contatos.html" target="_self">
+            <button class="styled-button">Contato</button> <!-- Botão de contato -->
+        </a>
+    </header>
+    <main>
+        <div class="container"> <!-- Contêiner principal do formulário -->
+            <div class="login-avatar"> <!-- Seção para o avatar de login -->
+                <img src="perfil.PNG" alt="Avatar"> <!-- Imagem do avatar -->
+            </div>
+
+            <form action="confirmacaoCadastro.html" onsubmit="return CADASTRO()">
+
+                <div class="input-box"> <!-- Contêiner para o campo de entrada de email -->
+                    <label for="email">Email:</label> <!-- Rótulo do campo de email -->
+                     <input type="text" id="email" name="email" required> <!-- Campo de entrada para email -->
+                </div>
+                <br>
+                <div class="input-box"> <!-- Contêiner para o campo de entrada de senha -->
+                    <label for="password">Senha:</label> <!-- Rótulo do campo de senha -->
+                    <input type="password" id="password" name="password" required> <!-- Campo de entrada para senha -->
+                </div>
+                <button id="enviar" type="submit">Entrar</button>
+                <br>
+            </form>
+        </div>
+    </main>
+
+    <!-- Informações do footer -->
+    <footer>
+        <p>Grêmio Estudantil [Nome da Escola]</p>
+        <p>Endereço: Rua [Nome da Rua], Nº [Número], Bairro [Nome do Bairro], Cidade [Nome da Cidade]</p>
+        <p>Contato: Telefone: (XX) XXXX-XXXX | Email: [email@escola.com.br]</p>
+        <p>&copy; [Ano Atual] Grêmio Estudantil [Nome da Escola] - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 
